@@ -40,12 +40,14 @@ $(document).ready(function(){
 // $('#form .btn').click(sendMail())
   
 function sendMail () {
+  const name = document.getElementById('name').value;
+  
   const subject = document.getElementById('project').value;
   const message = document.getElementById('message').value;
   //const name = document.getElementById('name').value;
   //const project = document.getElementById('project');
   //window.open( String( `mailto:olugbodijohhny^live.com?subject=${subject} &body=${body}` ).replace('^', '@') );
-  window.open(`mailto:olugbodijohhny@live.com?subject=${subject} &body=${message}`);
+  window.open(`mailto:olugbodijohhny@live.com?subject=${subject} for ${name} &body=Dear Johnny, ${message}`);
 }
 // document.querySelector(document).ready(function(){
 
